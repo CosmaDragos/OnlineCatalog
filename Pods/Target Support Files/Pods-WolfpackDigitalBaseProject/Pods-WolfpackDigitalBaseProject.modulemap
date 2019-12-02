@@ -1,0 +1,6 @@
+framework module Pods_WolfpackDigitalBaseProject {
+  umbrella header "Pods-WolfpackDigitalBaseProject-umbrella.h"
+
+  export *
+  module * { export * }
+}

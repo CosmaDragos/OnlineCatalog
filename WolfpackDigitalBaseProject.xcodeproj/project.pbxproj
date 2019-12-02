@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F2848112395295800878B5F /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2848102395295800878B5F /* Bindable.swift */; };
 		7FA77B2123942AB200665348 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA77B2023942AB200665348 /* AppDelegate.swift */; };
 		7FA77B2323942AB200665348 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA77B2223942AB200665348 /* SceneDelegate.swift */; };
 		7FA77B2523942AB200665348 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA77B2423942AB200665348 /* ViewController.swift */; };
@@ -14,6 +15,9 @@
 		7FA77B2A23942AB300665348 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FA77B2923942AB300665348 /* Assets.xcassets */; };
 		7FA77B2D23942AB300665348 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FA77B2B23942AB300665348 /* LaunchScreen.storyboard */; };
 		7FA77B3823942AB300665348 /* WolfpackDigitalBaseProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA77B3723942AB300665348 /* WolfpackDigitalBaseProjectTests.swift */; };
+		7FF75841239542F40034FF2A /* WolfpackDigitalBaseUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 7FF75840239542F40034FF2A /* WolfpackDigitalBaseUtils */; };
+		93E3AF23CF1CD66B9DBDB2BC /* Pods_WolfpackDigitalBaseProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76A1EF609FD49B264ED2530 /* Pods_WolfpackDigitalBaseProjectTests.framework */; };
+		C454FA5613B65E4B4442A4C7 /* Pods_WolfpackDigitalBaseProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 902EA005B7FB4EF42DE9D7BB /* Pods_WolfpackDigitalBaseProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D540318EF07497E5A1A3798 /* Pods-WolfpackDigitalBaseProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WolfpackDigitalBaseProjectTests.release.xcconfig"; path = "Target Support Files/Pods-WolfpackDigitalBaseProjectTests/Pods-WolfpackDigitalBaseProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		5B19FD0A155E6BB05BE06795 /* Pods-WolfpackDigitalBaseProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WolfpackDigitalBaseProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-WolfpackDigitalBaseProjectTests/Pods-WolfpackDigitalBaseProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7F2848102395295800878B5F /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
 		7FA77B1D23942AB200665348 /* WolfpackDigitalBaseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WolfpackDigitalBaseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FA77B2023942AB200665348 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FA77B2223942AB200665348 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +45,11 @@
 		7FA77B3323942AB300665348 /* WolfpackDigitalBaseProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WolfpackDigitalBaseProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FA77B3723942AB300665348 /* WolfpackDigitalBaseProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolfpackDigitalBaseProjectTests.swift; sourceTree = "<group>"; };
 		7FA77B3923942AB300665348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FF758422395445F0034FF2A /* WolfpackDigitalBaseProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WolfpackDigitalBaseProject.entitlements; sourceTree = "<group>"; };
+		902EA005B7FB4EF42DE9D7BB /* Pods_WolfpackDigitalBaseProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WolfpackDigitalBaseProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B188E6F18F9826C08EC5093B /* Pods-WolfpackDigitalBaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WolfpackDigitalBaseProject.release.xcconfig"; path = "Target Support Files/Pods-WolfpackDigitalBaseProject/Pods-WolfpackDigitalBaseProject.release.xcconfig"; sourceTree = "<group>"; };
+		C76A1EF609FD49B264ED2530 /* Pods_WolfpackDigitalBaseProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WolfpackDigitalBaseProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC28BC71C3C72AA4E35F39E8 /* Pods-WolfpackDigitalBaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WolfpackDigitalBaseProject.debug.xcconfig"; path = "Target Support Files/Pods-WolfpackDigitalBaseProject/Pods-WolfpackDigitalBaseProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C454FA5613B65E4B4442A4C7 /* Pods_WolfpackDigitalBaseProject.framework in Frameworks */,
+				7FF75841239542F40034FF2A /* WolfpackDigitalBaseUtils in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +66,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93E3AF23CF1CD66B9DBDB2BC /* Pods_WolfpackDigitalBaseProjectTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		56DD3466E7FC06D0617F23E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				902EA005B7FB4EF42DE9D7BB /* Pods_WolfpackDigitalBaseProject.framework */,
+				C76A1EF609FD49B264ED2530 /* Pods_WolfpackDigitalBaseProjectTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F28480F2395293600878B5F /* BaseProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				7F2848102395295800878B5F /* Bindable.swift */,
+			);
+			path = BaseProtocols;
+			sourceTree = "<group>";
+		};
 		7FA77B1423942AB200665348 = {
 			isa = PBXGroup;
 			children = (
 				7FA77B1F23942AB200665348 /* WolfpackDigitalBaseProject */,
 				7FA77B3623942AB300665348 /* WolfpackDigitalBaseProjectTests */,
 				7FA77B1E23942AB200665348 /* Products */,
+				D8DA2A1FFAF75E62621D9BEC /* Pods */,
+				56DD3466E7FC06D0617F23E2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +113,8 @@
 		7FA77B1F23942AB200665348 /* WolfpackDigitalBaseProject */ = {
 			isa = PBXGroup;
 			children = (
+				7FF758422395445F0034FF2A /* WolfpackDigitalBaseProject.entitlements */,
+				7F28480F2395293600878B5F /* BaseProtocols */,
 				7FA77B2023942AB200665348 /* AppDelegate.swift */,
 				7FA77B2223942AB200665348 /* SceneDelegate.swift */,
 				7FA77B2423942AB200665348 /* ViewController.swift */,
@@ -99,6 +135,17 @@
 			path = WolfpackDigitalBaseProjectTests;
 			sourceTree = "<group>";
 		};
+		D8DA2A1FFAF75E62621D9BEC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC28BC71C3C72AA4E35F39E8 /* Pods-WolfpackDigitalBaseProject.debug.xcconfig */,
+				B188E6F18F9826C08EC5093B /* Pods-WolfpackDigitalBaseProject.release.xcconfig */,
+				5B19FD0A155E6BB05BE06795 /* Pods-WolfpackDigitalBaseProjectTests.debug.xcconfig */,
+				0D540318EF07497E5A1A3798 /* Pods-WolfpackDigitalBaseProjectTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,15 +153,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7FA77B3C23942AB300665348 /* Build configuration list for PBXNativeTarget "WolfpackDigitalBaseProject" */;
 			buildPhases = (
+				08866DA1EAD784AEC5D6ED43 /* [CP] Check Pods Manifest.lock */,
 				7FA77B1923942AB200665348 /* Sources */,
 				7FA77B1A23942AB200665348 /* Frameworks */,
 				7FA77B1B23942AB200665348 /* Resources */,
+				A7CEED1644D0559BDDE1E4BC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = WolfpackDigitalBaseProject;
+			packageProductDependencies = (
+				7FF75840239542F40034FF2A /* WolfpackDigitalBaseUtils */,
+			);
 			productName = WolfpackDigitalBaseProject;
 			productReference = 7FA77B1D23942AB200665348 /* WolfpackDigitalBaseProject.app */;
 			productType = "com.apple.product-type.application";
@@ -123,6 +175,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7FA77B3F23942AB300665348 /* Build configuration list for PBXNativeTarget "WolfpackDigitalBaseProjectTests" */;
 			buildPhases = (
+				B99FA03651470BF87BC1CD87 /* [CP] Check Pods Manifest.lock */,
 				7FA77B2F23942AB300665348 /* Sources */,
 				7FA77B3023942AB300665348 /* Frameworks */,
 				7FA77B3123942AB300665348 /* Resources */,
@@ -165,6 +218,9 @@
 				Base,
 			);
 			mainGroup = 7FA77B1423942AB200665348;
+			packageReferences = (
+				7FF7583F239542F40034FF2A /* XCRemoteSwiftPackageReference "ios-base-utils" */,
+			);
 			productRefGroup = 7FA77B1E23942AB200665348 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -195,6 +251,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		08866DA1EAD784AEC5D6ED43 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WolfpackDigitalBaseProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7CEED1644D0559BDDE1E4BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WolfpackDigitalBaseProject/Pods-WolfpackDigitalBaseProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WolfpackDigitalBaseProject/Pods-WolfpackDigitalBaseProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WolfpackDigitalBaseProject/Pods-WolfpackDigitalBaseProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B99FA03651470BF87BC1CD87 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WolfpackDigitalBaseProjectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7FA77B1923942AB200665348 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -202,6 +322,7 @@
 			files = (
 				7FA77B2523942AB200665348 /* ViewController.swift in Sources */,
 				7FA77B2123942AB200665348 /* AppDelegate.swift in Sources */,
+				7F2848112395295800878B5F /* Bindable.swift in Sources */,
 				7FA77B2323942AB200665348 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,8 +481,10 @@
 		};
 		7FA77B3D23942AB300665348 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC28BC71C3C72AA4E35F39E8 /* Pods-WolfpackDigitalBaseProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WolfpackDigitalBaseProject/WolfpackDigitalBaseProject.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 66S9Y77FV9;
 				INFOPLIST_FILE = WolfpackDigitalBaseProject/Info.plist;
@@ -378,8 +501,10 @@
 		};
 		7FA77B3E23942AB300665348 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B188E6F18F9826C08EC5093B /* Pods-WolfpackDigitalBaseProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WolfpackDigitalBaseProject/WolfpackDigitalBaseProject.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 66S9Y77FV9;
 				INFOPLIST_FILE = WolfpackDigitalBaseProject/Info.plist;
@@ -396,6 +521,7 @@
 		};
 		7FA77B4023942AB300665348 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B19FD0A155E6BB05BE06795 /* Pods-WolfpackDigitalBaseProjectTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -418,6 +544,7 @@
 		};
 		7FA77B4123942AB300665348 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D540318EF07497E5A1A3798 /* Pods-WolfpackDigitalBaseProjectTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -469,6 +596,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7FF7583F239542F40034FF2A /* XCRemoteSwiftPackageReference "ios-base-utils" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/wolfpackdigitalapps/ios-base-utils/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7FF75840239542F40034FF2A /* WolfpackDigitalBaseUtils */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7FF7583F239542F40034FF2A /* XCRemoteSwiftPackageReference "ios-base-utils" */;
+			productName = WolfpackDigitalBaseUtils;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7FA77B1523942AB200665348 /* Project object */;
 }
