@@ -8,6 +8,7 @@
 
 import XCTest
 import Bond
+import ReactiveKit
 
 @testable import WolfpackDigitalBaseUtils
 @testable import WolfpackDigitalBaseProject
@@ -27,14 +28,20 @@ class WolfpackDigitalBaseProjectTests: XCTestCase {
             let observable = Observable<String>("")
         }
         
-        class MockBindable: Bindable<MockViewModel> {
+        class MockBindable: Bindable {
             
-            override init() {
-                super.init()
-                self.viewModel = MockViewModel()
+            typealias ViewModel = MockViewModel
+
+            var viewModel: MockViewModel? = MockViewModel() {
+                didSet {
+                    self.clearBindings()
+                    self.setupBindings()
+                }
             }
             
-            override func setupBindings() {
+            let disposeBag = DisposeBag()
+            
+            func setupBindings() {
                 XCTAssert(self.disposeBag.isDisposed)
                 
                 self.observe(viewModel!.observable) { (value) in

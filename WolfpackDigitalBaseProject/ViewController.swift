@@ -15,5 +15,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    // TODO: Folder structure
+    // TODO: Read me file + Release notes
+    // TODO: BaseVC, BaseVM
+    // TODO: Remaining protocols
+    // TODO: SwiftLint?
 }
 

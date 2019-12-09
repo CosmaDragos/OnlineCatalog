@@ -9,22 +9,22 @@
 import Bond
 import ReactiveKit
 
+/// Use for classes that have a viewModel to easily observe properties. It handless disposal and all you have to do is override setupBindings and use the observe method.
 
-/// Use for classes that have a viewMode to easily observe properties. It handless disposal and all you have to do is override setupBindings and use the observe method.
-class Bindable<ViewModel> {
+protocol Bindable: class {
+    
+    associatedtype ViewModel
+    
+    var disposeBag: DisposeBag { get }
+    var viewModel: ViewModel? { get set }
+    
+    func observe<A>(_ obervable: Observable<A>,
+                    _ execute: @escaping (A) -> Void)
+    
+    func setupBindings()
+}
 
-    let disposeBag = DisposeBag()
-    
-    var viewModel: ViewModel? {
-        didSet {
-            self.clearBindings()
-            self.setupBindings()
-        }
-    }
-    
-    deinit {
-        self.disposeBag.dispose()
-    }
+extension Bindable {
     
     func observe<A>(_ obervable: Observable<A>,
                     _ execute: @escaping (A) -> Void) {
@@ -33,10 +33,6 @@ class Bindable<ViewModel> {
             execute(a)
         }
         disposable.dispose(in: disposeBag)
-    }
-    
-    func setupBindings() {
-        assert(false, "Override in subclass")
     }
     
     func clearBindings() -> Void {
