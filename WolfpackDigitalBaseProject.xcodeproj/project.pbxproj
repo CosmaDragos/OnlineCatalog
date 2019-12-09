@@ -9,12 +9,20 @@
 /* Begin PBXBuildFile section */
 		7F2848112395295800878B5F /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2848102395295800878B5F /* Bindable.swift */; };
 		7FA77B2123942AB200665348 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA77B2023942AB200665348 /* AppDelegate.swift */; };
-		7FA77B2323942AB200665348 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA77B2223942AB200665348 /* SceneDelegate.swift */; };
 		7FA77B2523942AB200665348 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA77B2423942AB200665348 /* ViewController.swift */; };
 		7FA77B2823942AB200665348 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FA77B2623942AB200665348 /* Main.storyboard */; };
 		7FA77B2A23942AB300665348 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FA77B2923942AB300665348 /* Assets.xcassets */; };
 		7FA77B2D23942AB300665348 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FA77B2B23942AB300665348 /* LaunchScreen.storyboard */; };
 		7FA77B3823942AB300665348 /* WolfpackDigitalBaseProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA77B3723942AB300665348 /* WolfpackDigitalBaseProjectTests.swift */; };
+		7FCB3343239A92BB00319FF6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7FCB3342239A92BB00319FF6 /* Alamofire */; };
+		7FCB3346239A92E300319FF6 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCB3345239A92E300319FF6 /* APIResponse.swift */; };
+		7FCB3348239A936100319FF6 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCB3347239A936000319FF6 /* APIError.swift */; };
+		7FCB334C239A93C400319FF6 /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCB334B239A93C400319FF6 /* APIConfiguration.swift */; };
+		7FCB334E239A93EF00319FF6 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCB334D239A93EF00319FF6 /* APIRouter.swift */; };
+		7FCB3350239A97B000319FF6 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCB334F239A97B000319FF6 /* APIClient.swift */; };
+		7FCB3352239A981100319FF6 /* MultipartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCB3351239A981100319FF6 /* MultipartData.swift */; };
+		7FCB3354239A987700319FF6 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCB3353239A987700319FF6 /* AuthenticationService.swift */; };
+		7FD9374C239946C600487B1C /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD9374B239946C600487B1C /* CellViewModel.swift */; };
 		7FF75841239542F40034FF2A /* WolfpackDigitalBaseUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 7FF75840239542F40034FF2A /* WolfpackDigitalBaseUtils */; };
 		93E3AF23CF1CD66B9DBDB2BC /* Pods_WolfpackDigitalBaseProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76A1EF609FD49B264ED2530 /* Pods_WolfpackDigitalBaseProjectTests.framework */; };
 		C454FA5613B65E4B4442A4C7 /* Pods_WolfpackDigitalBaseProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 902EA005B7FB4EF42DE9D7BB /* Pods_WolfpackDigitalBaseProject.framework */; };
@@ -36,7 +44,6 @@
 		7F2848102395295800878B5F /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
 		7FA77B1D23942AB200665348 /* WolfpackDigitalBaseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WolfpackDigitalBaseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FA77B2023942AB200665348 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7FA77B2223942AB200665348 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7FA77B2423942AB200665348 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7FA77B2723942AB200665348 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7FA77B2923942AB300665348 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,6 +52,14 @@
 		7FA77B3323942AB300665348 /* WolfpackDigitalBaseProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WolfpackDigitalBaseProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FA77B3723942AB300665348 /* WolfpackDigitalBaseProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolfpackDigitalBaseProjectTests.swift; sourceTree = "<group>"; };
 		7FA77B3923942AB300665348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FCB3345239A92E300319FF6 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		7FCB3347239A936000319FF6 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		7FCB334B239A93C400319FF6 /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
+		7FCB334D239A93EF00319FF6 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		7FCB334F239A97B000319FF6 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		7FCB3351239A981100319FF6 /* MultipartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartData.swift; sourceTree = "<group>"; };
+		7FCB3353239A987700319FF6 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		7FD9374B239946C600487B1C /* CellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModel.swift; sourceTree = "<group>"; };
 		7FF758422395445F0034FF2A /* WolfpackDigitalBaseProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WolfpackDigitalBaseProject.entitlements; sourceTree = "<group>"; };
 		902EA005B7FB4EF42DE9D7BB /* Pods_WolfpackDigitalBaseProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WolfpackDigitalBaseProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B188E6F18F9826C08EC5093B /* Pods-WolfpackDigitalBaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WolfpackDigitalBaseProject.release.xcconfig"; path = "Target Support Files/Pods-WolfpackDigitalBaseProject/Pods-WolfpackDigitalBaseProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -57,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FCB3343239A92BB00319FF6 /* Alamofire in Frameworks */,
 				C454FA5613B65E4B4442A4C7 /* Pods_WolfpackDigitalBaseProject.framework in Frameworks */,
 				7FF75841239542F40034FF2A /* WolfpackDigitalBaseUtils in Frameworks */,
 			);
@@ -86,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				7F2848102395295800878B5F /* Bindable.swift */,
+				7FD9374B239946C600487B1C /* CellViewModel.swift */,
 			);
 			path = BaseProtocols;
 			sourceTree = "<group>";
@@ -114,9 +131,9 @@
 			isa = PBXGroup;
 			children = (
 				7FF758422395445F0034FF2A /* WolfpackDigitalBaseProject.entitlements */,
+				7FCB3344239A92D400319FF6 /* Networking */,
 				7F28480F2395293600878B5F /* BaseProtocols */,
 				7FA77B2023942AB200665348 /* AppDelegate.swift */,
-				7FA77B2223942AB200665348 /* SceneDelegate.swift */,
 				7FA77B2423942AB200665348 /* ViewController.swift */,
 				7FA77B2623942AB200665348 /* Main.storyboard */,
 				7FA77B2923942AB300665348 /* Assets.xcassets */,
@@ -133,6 +150,36 @@
 				7FA77B3923942AB300665348 /* Info.plist */,
 			);
 			path = WolfpackDigitalBaseProjectTests;
+			sourceTree = "<group>";
+		};
+		7FCB3344239A92D400319FF6 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				7FCB334A239A93B700319FF6 /* Protocols */,
+				7FCB3349239A938C00319FF6 /* Models */,
+				7FCB334D239A93EF00319FF6 /* APIRouter.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		7FCB3349239A938C00319FF6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7FCB3345239A92E300319FF6 /* APIResponse.swift */,
+				7FCB3347239A936000319FF6 /* APIError.swift */,
+				7FCB3351239A981100319FF6 /* MultipartData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7FCB334A239A93B700319FF6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7FCB334B239A93C400319FF6 /* APIConfiguration.swift */,
+				7FCB334F239A97B000319FF6 /* APIClient.swift */,
+				7FCB3353239A987700319FF6 /* AuthenticationService.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		D8DA2A1FFAF75E62621D9BEC /* Pods */ = {
@@ -166,6 +213,7 @@
 			name = WolfpackDigitalBaseProject;
 			packageProductDependencies = (
 				7FF75840239542F40034FF2A /* WolfpackDigitalBaseUtils */,
+				7FCB3342239A92BB00319FF6 /* Alamofire */,
 			);
 			productName = WolfpackDigitalBaseProject;
 			productReference = 7FA77B1D23942AB200665348 /* WolfpackDigitalBaseProject.app */;
@@ -220,6 +268,7 @@
 			mainGroup = 7FA77B1423942AB200665348;
 			packageReferences = (
 				7FF7583F239542F40034FF2A /* XCRemoteSwiftPackageReference "ios-base-utils" */,
+				7FCB3341239A92BB00319FF6 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 7FA77B1E23942AB200665348 /* Products */;
 			projectDirPath = "";
@@ -320,10 +369,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FD9374C239946C600487B1C /* CellViewModel.swift in Sources */,
 				7FA77B2523942AB200665348 /* ViewController.swift in Sources */,
 				7FA77B2123942AB200665348 /* AppDelegate.swift in Sources */,
+				7FCB3346239A92E300319FF6 /* APIResponse.swift in Sources */,
+				7FCB3354239A987700319FF6 /* AuthenticationService.swift in Sources */,
 				7F2848112395295800878B5F /* Bindable.swift in Sources */,
-				7FA77B2323942AB200665348 /* SceneDelegate.swift in Sources */,
+				7FCB334E239A93EF00319FF6 /* APIRouter.swift in Sources */,
+				7FCB334C239A93C400319FF6 /* APIConfiguration.swift in Sources */,
+				7FCB3348239A936100319FF6 /* APIError.swift in Sources */,
+				7FCB3352239A981100319FF6 /* MultipartData.swift in Sources */,
+				7FCB3350239A97B000319FF6 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,6 +654,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		7FCB3341239A92BB00319FF6 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = "5.0.0-rc.3";
+			};
+		};
 		7FF7583F239542F40034FF2A /* XCRemoteSwiftPackageReference "ios-base-utils" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/wolfpackdigitalapps/ios-base-utils/";
@@ -609,6 +673,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		7FCB3342239A92BB00319FF6 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7FCB3341239A92BB00319FF6 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		7FF75840239542F40034FF2A /* WolfpackDigitalBaseUtils */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 7FF7583F239542F40034FF2A /* XCRemoteSwiftPackageReference "ios-base-utils" */;
