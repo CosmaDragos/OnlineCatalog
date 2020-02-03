@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import WolfpackDigitalBaseUtils
 
 class ViewController: UIViewController {
 

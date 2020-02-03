@@ -9,24 +9,6 @@
           "revision": "2cbf59935fbb1f26e352ce4db53f1cf9408d5313",
           "version": "5.0.0-rc.3"
         }
-      },
-      {
-        "package": "WolfpackDigitalBaseUtils",
-        "repositoryURL": "https://github.com/wolfpackdigitalapps/ios-base-utils/",
-        "state": {
-          "branch": null,
-          "revision": "43b9fdf398f7916f0f17b9c54c35827f20893abe",
-          "version": "1.0.2"
-        }
-      },
-      {
-        "package": "Lottie",
-        "repositoryURL": "https://github.com/airbnb/lottie-ios.git",
-        "state": {
-          "branch": null,
-          "revision": "eb115967234671b725264422d82c9d1d6b226e5a",
-          "version": "3.1.5"
-        }
       }
     ]
   },

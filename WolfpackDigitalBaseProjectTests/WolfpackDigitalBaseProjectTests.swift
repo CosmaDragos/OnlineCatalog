@@ -10,7 +10,6 @@ import XCTest
 import Bond
 import ReactiveKit
 
-@testable import WolfpackDigitalBaseUtils
 @testable import WolfpackDigitalBaseProject
 
 class WolfpackDigitalBaseProjectTests: XCTestCase {

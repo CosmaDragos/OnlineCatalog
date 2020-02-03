@@ -32,7 +32,7 @@ extension APIClient {
                 print(response)
             })
             .response(completionHandler: { (response) in
-                print(response.response?.statusCode)
+                print(response.response?.statusCode as Any)
             })
             .responseDecodable (decoder: decoder) { (response: AFDataResponse<T>) in
                 self.parseResponse(response: response, completion: completion)
