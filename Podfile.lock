@@ -4,25 +4,29 @@ PODS:
     - Differ (~> 1.4)
     - ReactiveKit (~> 3.14)
   - Differ (1.4.4)
+  - lottie-ios (3.1.6)
   - ReactiveKit (3.16.1)
 
 DEPENDENCIES:
   - Alamofire (~> 5.0.0-rc.3)
   - Bond
+  - lottie-ios
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - Bond
     - Differ
+    - lottie-ios
     - ReactiveKit
 
 SPEC CHECKSUMS:
   Alamofire: ca8c0de6906873be89d6deec5c8de279e00bf872
   Bond: 9e7d901cf4ed825b6004a93dd0a7f1c7479e2834
   Differ: 5cd747e2f29c11ea9605eba7cb369df17e2b1ee2
+  lottie-ios: 85ce835dd8c53e02509f20729fc7d6a4e6645a0a
   ReactiveKit: e75c4c10c2b2b6469bf7c8c177675f3ee8baa949
 
-PODFILE CHECKSUM: fffd7c82c81a1518c3d1c329539abe8ef186ce5a
+PODFILE CHECKSUM: 322893a878fe6512e3b94bae636b1ea5e7151a51
 
 COCOAPODS: 1.8.4

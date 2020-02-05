@@ -1,9 +1,9 @@
 //
 //  UIColorExtensions.swift
-//  Snapbuy
+//  
 //
 //  Created by Dan Ilies on 27/09/2019.
-//  Copyright © 2019 Snapbuy. All rights reserved.
+//  Copyright © 2020 Wolfpack Digital. All rights reserved.
 //
 
 import UIKit

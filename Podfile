@@ -9,7 +9,7 @@ target 'WolfpackDigitalBaseProject' do
 
   pod 'Alamofire', '~> 5.0.0-rc.3'
   pod 'Bond'
-  # pod 'lottie-ios'
+  pod 'lottie-ios'
 
   target 'WolfpackDigitalBaseProjectTests' do
     inherit! :search_paths

@@ -1,12 +1,12 @@
 //
 //  LoadingView.swift
-//  Ideacracy
+//  
 //
 //  Created by Bianca Felecan on 05/09/2019.
-//  Copyright © 2019 Wolfpack Digital. All rights reserved.
+//  Copyright © 2020 Wolfpack Digital. All rights reserved.
 //
 
-/*
+
 import UIKit
 import Lottie
 
@@ -31,7 +31,7 @@ import Lottie
         }
     }
     
-    @IBInspectable public var animationFileName: String = "loading-animation" {
+    @IBInspectable public var animationFileName: String = "loader" {
         didSet {
             self.animationView.animation = Animation.named(animationFileName)
         }
@@ -90,4 +90,4 @@ import Lottie
     }
     
 }
-*/
+
