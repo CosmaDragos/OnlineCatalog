@@ -39,13 +39,16 @@
 		02BD60F223EC262E00800EA0 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BD60F123EC262E00800EA0 /* Colors.swift */; };
 		02BD60F423EC26C000800EA0 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BD60F323EC26C000800EA0 /* GradientView.swift */; };
 		02BD60F623EC29B900800EA0 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BD60F523EC29B900800EA0 /* Observer.swift */; };
+		02BD60F823EC2CEC00800EA0 /* KeychainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BD60F723EC2CEC00800EA0 /* KeychainTests.swift */; };
+		02BD60FA23EC35E700800EA0 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BD60F923EC35E700800EA0 /* StringExtensions.swift */; };
+		02BD60FC23EC375C00800EA0 /* BaseProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BD60FB23EC375C00800EA0 /* BaseProjectTests.swift */; };
+		02BD60FE23EC37A100800EA0 /* AttributedStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BD60FD23EC37A100800EA0 /* AttributedStringExtensions.swift */; };
 		7F2848112395295800878B5F /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2848102395295800878B5F /* Bindable.swift */; };
 		7FA77B2123942AB200665348 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA77B2023942AB200665348 /* AppDelegate.swift */; };
 		7FA77B2523942AB200665348 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA77B2423942AB200665348 /* ViewController.swift */; };
 		7FA77B2823942AB200665348 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FA77B2623942AB200665348 /* Main.storyboard */; };
 		7FA77B2A23942AB300665348 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FA77B2923942AB300665348 /* Assets.xcassets */; };
 		7FA77B2D23942AB300665348 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FA77B2B23942AB300665348 /* LaunchScreen.storyboard */; };
-		7FA77B3823942AB300665348 /* WolfpackDigitalBaseProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA77B3723942AB300665348 /* WolfpackDigitalBaseProjectTests.swift */; };
 		7FCB3346239A92E300319FF6 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCB3345239A92E300319FF6 /* APIResponse.swift */; };
 		7FCB3348239A936100319FF6 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCB3347239A936000319FF6 /* APIError.swift */; };
 		7FCB334C239A93C400319FF6 /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCB334B239A93C400319FF6 /* APIConfiguration.swift */; };
@@ -101,6 +104,10 @@
 		02BD60F123EC262E00800EA0 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		02BD60F323EC26C000800EA0 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		02BD60F523EC29B900800EA0 /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		02BD60F723EC2CEC00800EA0 /* KeychainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainTests.swift; sourceTree = "<group>"; };
+		02BD60F923EC35E700800EA0 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		02BD60FB23EC375C00800EA0 /* BaseProjectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseProjectTests.swift; sourceTree = "<group>"; };
+		02BD60FD23EC37A100800EA0 /* AttributedStringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedStringExtensions.swift; sourceTree = "<group>"; };
 		0D540318EF07497E5A1A3798 /* Pods-WolfpackDigitalBaseProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WolfpackDigitalBaseProjectTests.release.xcconfig"; path = "Target Support Files/Pods-WolfpackDigitalBaseProjectTests/Pods-WolfpackDigitalBaseProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		5B19FD0A155E6BB05BE06795 /* Pods-WolfpackDigitalBaseProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WolfpackDigitalBaseProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-WolfpackDigitalBaseProjectTests/Pods-WolfpackDigitalBaseProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7F2848102395295800878B5F /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
@@ -112,7 +119,6 @@
 		7FA77B2C23942AB300665348 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7FA77B2E23942AB300665348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FA77B3323942AB300665348 /* WolfpackDigitalBaseProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WolfpackDigitalBaseProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7FA77B3723942AB300665348 /* WolfpackDigitalBaseProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolfpackDigitalBaseProjectTests.swift; sourceTree = "<group>"; };
 		7FA77B3923942AB300665348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FCB3345239A92E300319FF6 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		7FCB3347239A936000319FF6 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
@@ -270,6 +276,8 @@
 				02BD60B523EABD7400800EA0 /* NSObjectExtensions.swift */,
 				02BD60EF23EC22F400800EA0 /* ArrayExtensions.swift */,
 				02BD60ED23EC22CF00800EA0 /* DateExtensions.swift */,
+				02BD60F923EC35E700800EA0 /* StringExtensions.swift */,
+				02BD60FD23EC37A100800EA0 /* AttributedStringExtensions.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -332,7 +340,8 @@
 		7FA77B3623942AB300665348 /* WolfpackDigitalBaseProjectTests */ = {
 			isa = PBXGroup;
 			children = (
-				7FA77B3723942AB300665348 /* WolfpackDigitalBaseProjectTests.swift */,
+				02BD60FB23EC375C00800EA0 /* BaseProjectTests.swift */,
+				02BD60F723EC2CEC00800EA0 /* KeychainTests.swift */,
 				7FA77B3923942AB300665348 /* Info.plist */,
 			);
 			path = WolfpackDigitalBaseProjectTests;
@@ -571,12 +580,14 @@
 				027846EF23E84E2C00A369EC /* Keychain.swift in Sources */,
 				02BD60C723EABD8900800EA0 /* UIImageExtensions.swift in Sources */,
 				02BD60C623EABD8900800EA0 /* UIViewControllerExtensions.swift in Sources */,
+				02BD60FE23EC37A100800EA0 /* AttributedStringExtensions.swift in Sources */,
 				02BD60C223EABD8900800EA0 /* UINavigationBarExtensions.swift in Sources */,
 				7F2848112395295800878B5F /* Bindable.swift in Sources */,
 				7FCB334E239A93EF00319FF6 /* APIRouter.swift in Sources */,
 				02BD60F023EC22F400800EA0 /* ArrayExtensions.swift in Sources */,
 				02BD60F423EC26C000800EA0 /* GradientView.swift in Sources */,
 				02BD60EB23EC222D00800EA0 /* NotificationsWrapper.swift in Sources */,
+				02BD60FA23EC35E700800EA0 /* StringExtensions.swift in Sources */,
 				7FCB334C239A93C400319FF6 /* APIConfiguration.swift in Sources */,
 				02BD60D123EABEA200800EA0 /* Segue.swift in Sources */,
 				02BD60B723EABD7400800EA0 /* NSObjectExtensions.swift in Sources */,
@@ -601,7 +612,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FA77B3823942AB300665348 /* WolfpackDigitalBaseProjectTests.swift in Sources */,
+				02BD60FC23EC375C00800EA0 /* BaseProjectTests.swift in Sources */,
+				02BD60F823EC2CEC00800EA0 /* KeychainTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

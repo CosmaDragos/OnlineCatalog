@@ -16,6 +16,7 @@ public class Keychain {
     
     static public let standard = Keychain()
     
+    @discardableResult
     public func set(_ data: Data, forKey key: String) -> Bool {
         let query: [String: Any] = [
             kSecClass as String: kSecClassGenericPassword as String,
@@ -48,6 +49,7 @@ public class Keychain {
         return existingItem
     }
     
+    @discardableResult
     public func delete(key: String) -> Bool {
         let query: [String: Any] = [
             kSecClass as String: kSecClassGenericPassword,
@@ -59,6 +61,7 @@ public class Keychain {
         return status == noErr
     }
     
+    @discardableResult
     public func clear() -> Bool {
         let query = [
             kSecClass as String: kSecClassGenericPassword

@@ -1,62 +1,25 @@
 //
-//  WolfpackDigitalBaseProjectTests.swift
+//  KeychainTests.swift
 //  WolfpackDigitalBaseProjectTests
 //
-//  Created by Bianca Felecan on 01/12/2019.
+//  Created by Dan Ilies on 06/02/2020.
 //  Copyright © 2020 Wolfpack Digital. All rights reserved.
 //
 
 import XCTest
-import Bond
-import ReactiveKit
 
 @testable import WolfpackDigitalBaseProject
 
-class WolfpackDigitalBaseProjectTests: XCTestCase {
+class KeychainTests: XCTestCase {
 
     override func setUp() {
-        
+        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
 
     override func tearDown() {
-        _ = Keychain.standard.clear()
+        // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testBindable() {
-        class MockViewModel {
-            let observable = Observable<String>("")
-        }
-        
-        class MockBindable: Bindable {
-            
-            typealias ViewModel = MockViewModel
-
-            var viewModel: MockViewModel? = MockViewModel() {
-                didSet {
-                    self.clearBindings()
-                    self.setupBindings()
-                }
-            }
-            
-            let disposeBag = DisposeBag()
-            
-            func setupBindings() {
-                XCTAssert(self.disposeBag.isDisposed)
-                
-                self.observe(viewModel!.observable) { (value) in
-                    XCTAssert(value == "")
-                }
-                
-                XCTAssert(!self.disposeBag.isDisposed)
-            }
-        }
-        
-        var bindable: MockBindable? = MockBindable()
-        let disposeBag = bindable?.disposeBag
-        bindable = nil
-        XCTAssert(disposeBag?.isDisposed == true)
-    }
-    
     func testKeychain() {
         let string1 = "string1"
         let key1 = "key1"
@@ -108,10 +71,4 @@ class WolfpackDigitalBaseProjectTests: XCTestCase {
         XCTAssert(storedObject3 == nil, "Keychain did not clear")
     }
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
 }

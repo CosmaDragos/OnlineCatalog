@@ -12,6 +12,9 @@ import UIKit
 
 extension UIImage {
     
+    /**
+        Creates an image filled with a rectangle with the specified color and size
+    */
     convenience init?(color: UIColor, size: CGSize = CGSize(width: 1, height: 1)) {
         let rect = CGRect(origin: .zero, size: size)
         UIGraphicsBeginImageContextWithOptions(rect.size, false, 0.0)
@@ -45,6 +48,9 @@ extension UIImage {
 
 extension UIImage {
     
+    /**
+        Use after selecting image with image picker
+    */
     func fixedOrientation() -> UIImage {
         if self.imageOrientation == .up {
             return self
