@@ -9,16 +9,6 @@
 import UIKit
 
 /*
- * MARK: - Custom Colors
- */
-extension UIColor {
-    
-    static let appBlue = UIColor(named: "appBlue") ?? UIColor.blue
-    
-}
-
-
-/*
  * MARK: - Transformations
  */
 extension UIColor {

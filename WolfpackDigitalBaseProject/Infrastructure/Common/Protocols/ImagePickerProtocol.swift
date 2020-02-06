@@ -11,13 +11,13 @@ import MobileCoreServices
 import Photos
 import AVFoundation
 
-protocol ImagePickerDelegate: UIImagePickerControllerDelegate & UINavigationControllerDelegate {}
+protocol ImagePicker: UIImagePickerControllerDelegate & UINavigationControllerDelegate {}
 
 protocol ImagePickerPresenterProtocol where Self: UIViewController {
     func openImagePicker(source: UIImagePickerController.SourceType,
                          mediaTypes: [String],
                          cameraDevice: UIImagePickerController.CameraDevice,
-                         delegate: ImagePickerDelegate?)
+                         delegate: ImagePicker?)
 }
 
 extension ImagePickerPresenterProtocol {
@@ -25,7 +25,7 @@ extension ImagePickerPresenterProtocol {
     func openImagePicker(source: UIImagePickerController.SourceType,
                          mediaTypes: [String] = [kUTTypeImage as String],
                          cameraDevice: UIImagePickerController.CameraDevice,
-                         delegate: ImagePickerDelegate?) {
+                         delegate: ImagePicker?) {
         // Camera Authorization
         if source == .camera {
             let cameraAuthorizationStatus = AVCaptureDevice.authorizationStatus(for: AVMediaType.video)
@@ -76,7 +76,7 @@ extension ImagePickerPresenterProtocol {
     private func presentImagePicker(source: UIImagePickerController.SourceType,
                                     mediaTypes: [String] = [kUTTypeImage as String],
                                     cameraDevice: UIImagePickerController.CameraDevice = .rear,
-                                    delegate: ImagePickerDelegate?) {
+                                    delegate: ImagePicker?) {
         let imagePickerController = UIImagePickerController()
         imagePickerController.sourceType = source
         imagePickerController.mediaTypes = mediaTypes

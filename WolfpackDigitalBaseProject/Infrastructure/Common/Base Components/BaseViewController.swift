@@ -9,9 +9,10 @@
 import UIKit
 import ReactiveKit
 
-class BaseViewController: UIViewController, LoadingProtocol, AlertPresenter {
+class BaseViewController: UIViewController, Observer, LoadingPresenter, AlertPresenter {
 
     // MARK: - Properties
+    
     let disposeBag = DisposeBag()
     
     var loadingView: LoadingView?

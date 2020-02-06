@@ -8,7 +8,7 @@
 
 import Bond
 
-protocol ViewModel {
+protocol BaseViewModel {
     associatedtype Command
     
     var command: Observable<Command?> { get }

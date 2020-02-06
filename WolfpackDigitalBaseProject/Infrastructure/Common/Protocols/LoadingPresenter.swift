@@ -1,5 +1,5 @@
 //
-//  LoadingProtocol.swift
+//  LoadingPresenter.swift
 //  
 //
 //  Created by Dan Ilies on 27/09/2019.
@@ -12,7 +12,7 @@ private let minDuration: TimeInterval = 1
 /**
  * Handle the display of custom activity indicators
  */
-protocol LoadingProtocol where Self: UIViewController {
+protocol LoadingPresenter where Self: UIViewController {
     var loadingView: LoadingView? { get set }
     //var timer: Timer { get set }
 
@@ -20,7 +20,7 @@ protocol LoadingProtocol where Self: UIViewController {
     func hideLoading()
 }
 
-extension LoadingProtocol {
+extension LoadingPresenter {
 
     func showLoading() {
         let loadingView = self.loadingView ?? LoadingView(frame: self.view.frame)

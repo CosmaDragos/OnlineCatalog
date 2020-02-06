@@ -20,7 +20,7 @@ extension UINavigationBar {
     func makeOpaque(color: UIColor = .white) {
         self.isTranslucent = false
         self.backgroundColor = color
-        self.setBackgroundImage(UIImage.imageWithColor(color: color), for: .default)
+        self.setBackgroundImage(UIImage(color: color), for: .default)
         self.shadowImage = UIColor.appBlue.toImage(width: UIScreen.main.bounds.width, height: 0.5)
     }
 
