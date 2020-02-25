@@ -3,7 +3,7 @@
 //  WolfpackDigitalBaseProject
 //
 //  Created by Bianca Felecan on 06/12/2019.
-//  Copyright © 2019 Wolfpack Digital. All rights reserved.
+//  Copyright © 2020 Wolfpack Digital. All rights reserved.
 //
 
 import Alamofire
@@ -32,7 +32,7 @@ extension APIClient {
                 print(response)
             })
             .response(completionHandler: { (response) in
-                print(response.response?.statusCode)
+                print(response.response?.statusCode as Any)
             })
             .responseDecodable (decoder: decoder) { (response: AFDataResponse<T>) in
                 self.parseResponse(response: response, completion: completion)
