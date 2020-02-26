@@ -11,7 +11,7 @@ import MobileCoreServices
 import Photos
 import AVFoundation
 
-protocol ImagePicker: UIImagePickerControllerDelegate & UINavigationControllerDelegate {}
+protocol ImagePicker: UIImagePickerControllerDelegate & UINavigationControllerDelegate { }
 
 protocol ImagePickerPresenterProtocol where Self: UIViewController {
     func openImagePicker(source: UIImagePickerController.SourceType,
@@ -21,7 +21,7 @@ protocol ImagePickerPresenterProtocol where Self: UIViewController {
 }
 
 extension ImagePickerPresenterProtocol {
-    
+
     func openImagePicker(source: UIImagePickerController.SourceType,
                          mediaTypes: [String] = [kUTTypeImage as String],
                          cameraDevice: UIImagePickerController.CameraDevice,
@@ -46,7 +46,7 @@ extension ImagePickerPresenterProtocol {
                         }
                     }
                 }
-            @unknown default: break
+                @unknown default: break
             }
         } else {
             // Photo Library Authorization
@@ -57,22 +57,22 @@ extension ImagePickerPresenterProtocol {
             case .denied, .restricted:
                 self.presentPermissionsDeniedAlert()
             case .notDetermined:
-                PHPhotoLibrary.requestAuthorization({status in
+                PHPhotoLibrary.requestAuthorization({ status in
                     DispatchQueue.main.async {
-                        if status == .authorized{
+                        if status == .authorized {
                             self.presentImagePicker(source: source, mediaTypes: mediaTypes, delegate: delegate)
                         } else {
                             self.presentPermissionsDeniedAlert()
                         }
                     }
                 })
-            @unknown default: break
+                @unknown default: break
             }
         }
     }
-    
+
     // MARK - Private functions
-    
+
     private func presentImagePicker(source: UIImagePickerController.SourceType,
                                     mediaTypes: [String] = [kUTTypeImage as String],
                                     cameraDevice: UIImagePickerController.CameraDevice = .rear,
@@ -89,7 +89,7 @@ extension ImagePickerPresenterProtocol {
             self.present(imagePickerController, animated: true, completion: nil)
         }
     }
-    
+
     private func presentPermissionsDeniedAlert() {
         let alert = UIAlertController(title: Strings.Alerts.permissionsTitle,
                                       message: Strings.Alerts.permissionsMessage,
@@ -105,5 +105,5 @@ extension ImagePickerPresenterProtocol {
         alert.addAction(settingsAction)
         self.present(alert, animated: true, completion: nil)
     }
-    
+
 }

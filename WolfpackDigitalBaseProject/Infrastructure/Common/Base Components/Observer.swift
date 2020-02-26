@@ -21,9 +21,9 @@ extension Observer {
     
     func observe<A>(_ obervable: Observable<A>,
                     _ execute: @escaping (A) -> Void) {
-        obervable.observeNext { [weak self] a in
+        obervable.observeNext { [weak self] value in
             guard let _ = self else { return }
-            execute(a)
+            execute(value)
         }.dispose(in: disposeBag)
     }
     

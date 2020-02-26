@@ -1,16 +1,18 @@
 PODS:
-  - Alamofire (5.0.0-rc.3)
+  - Alamofire (5.0.2)
   - Bond (7.6.6):
     - Differ (~> 1.4)
     - ReactiveKit (~> 3.14)
   - Differ (1.4.4)
   - lottie-ios (3.1.6)
-  - ReactiveKit (3.16.1)
+  - ReactiveKit (3.16.2)
+  - SwiftLint (0.39.1)
 
 DEPENDENCIES:
   - Alamofire (~> 5.0.0-rc.3)
   - Bond
   - lottie-ios
+  - SwiftLint
 
 SPEC REPOS:
   trunk:
@@ -19,14 +21,16 @@ SPEC REPOS:
     - Differ
     - lottie-ios
     - ReactiveKit
+    - SwiftLint
 
 SPEC CHECKSUMS:
-  Alamofire: ca8c0de6906873be89d6deec5c8de279e00bf872
+  Alamofire: 3ba7a4db18b4f62c4a1c0e1cb39d7f3d52e10ada
   Bond: 9e7d901cf4ed825b6004a93dd0a7f1c7479e2834
   Differ: 5cd747e2f29c11ea9605eba7cb369df17e2b1ee2
   lottie-ios: 85ce835dd8c53e02509f20729fc7d6a4e6645a0a
-  ReactiveKit: e75c4c10c2b2b6469bf7c8c177675f3ee8baa949
+  ReactiveKit: c46f8358afe351a9a148c9462ca2d0f5f7b17ca7
+  SwiftLint: 55e96a4a4d537d4a3156859fc1c54bd24851a046
 
-PODFILE CHECKSUM: 322893a878fe6512e3b94bae636b1ea5e7151a51
+PODFILE CHECKSUM: 46746af735ea0d97777c7d7587976b947e82addc
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.8.3
