@@ -10,6 +10,10 @@ target 'WolfpackDigitalBaseProject' do
   pod 'Alamofire', '~> 5.0.0-rc.3'
   pod 'Bond'
   pod 'lottie-ios'
+  pod 'SwiftLint'
+  
+  # ignore all warnings from all dependencies
+  inhibit_all_warnings!
 
   target 'WolfpackDigitalBaseProjectTests' do
     inherit! :search_paths

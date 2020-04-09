@@ -9,7 +9,7 @@
 import Foundation
 
 struct Strings {
-    
+
     struct General {
         static var back: String {
             return NSLocalizedString("Back", comment: "Back")
@@ -26,7 +26,7 @@ struct Strings {
             return NSLocalizedString("Cancel", comment: "cancel")
         }
     }
-    
+
     struct Alerts {
         static var permissionsTitle: String {
             return NSLocalizedString("Permissions required", comment: "Alert Permissions Title")
@@ -38,5 +38,5 @@ struct Strings {
             return NSLocalizedString("Go to Settings", comment: "Settings redirect button")
         }
     }
-    
+
 }

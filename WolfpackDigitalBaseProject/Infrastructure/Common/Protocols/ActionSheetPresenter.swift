@@ -24,8 +24,8 @@ extension ActionSheetPresenter {
                                             message: message,
                                             preferredStyle: .actionSheet)
         
-        for i in 0..<actions.count {
-            let action = UIAlertAction(title: actionsTitles[i], style: .default, handler: actions[i])
+        for index in 0..<actions.count {
+            let action = UIAlertAction(title: actionsTitles[index], style: .default, handler: actions[index])
             actionSheet.addAction(action)
         }
         
