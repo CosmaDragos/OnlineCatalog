@@ -17,6 +17,4 @@ class ViewController: UIViewController {
     
     // TODO: Read me file + Release notes
     // TODO: Remaining protocols
-    // TODO: SwiftLint?
 }
-

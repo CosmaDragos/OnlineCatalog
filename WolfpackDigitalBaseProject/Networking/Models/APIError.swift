@@ -22,4 +22,3 @@ struct APIError: Decodable, LocalizedError {
     }
     
 }
-
